@@ -17,10 +17,10 @@ html, body, div {
     grid-template-areas:
     'header header header'
     'main . sidebar'
-    'footer footer footer'
+    'footer footer footer';
 
     /* Bonus Phase */
-
+    grid-row-gap: 15px;
 
 }
 .item-1 {
@@ -52,7 +52,7 @@ html, body, div {
 
 .divider {
     background-image: linear-gradient(to right, #e1f1dd, #cdc7be);
-
+    width: 100px;
     /* Bonus Phase */
 }
 
@@ -63,5 +63,11 @@ html, body, div {
     margin: 20px;
 
     /* Phase 2 */
-
+    display: grid;
+    width: fit-content;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-flow: column;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: center;
 }
